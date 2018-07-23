@@ -1,0 +1,23 @@
+title {
+  background-color: #DDD;
+  padding: 10px 20px 10px 20px
+}
+
+body {
+  background-color: #FFF
+  padding: 10px 20px 20px 20px
+}
+
+#yomiuri{
+  font-size: 30pt;
+
+}
+
+#mainichi{
+  font-size: 30pt;
+
+}
+
+#asahi{
+  font-size: 30pt;
+}
