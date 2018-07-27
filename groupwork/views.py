@@ -20,7 +20,7 @@ def appmain(request):
     nikkei = requests.get('http://www.nikkei.com/news/category')
     content_type_encoding = asahi.encoding
 
-    kyodo = requests.get('https://this.kiji.is/-/units/39166665832988672')
+    
 
 
 
