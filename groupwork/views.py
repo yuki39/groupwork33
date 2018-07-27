@@ -17,6 +17,7 @@ def appmain(request):
     yomiuri = requests.get('https://www.yomiuri.co.jp/latestnews/')
     mainichi = requests.get('https://mainichi.jp/flash/1')
     asahi = requests.get('http://www.asahi.com/news/')
+    nikkei = requests.get('http://www.nikkei.com/news/category')
     content_type_encoding = asahi.encoding
 
     kyodo = requests.get('https://this.kiji.is/-/units/39166665832988672')
@@ -28,6 +29,7 @@ def appmain(request):
     soupy = bs4.BeautifulSoup(yomiuri.text, "html.parser")
     soupm = bs4.BeautifulSoup(mainichi.text, "html.parser")
     soupa = bs4.BeautifulSoup(asahi.text, "html.parser",from_encoding='Shift_JIS')
+    soupn = bs4.BeautifulSoup(nikkei.text, "html.parser")
 
 
         # この Wiki エントリのタイトルの文字列を変数 title に代入
@@ -41,7 +43,9 @@ def appmain(request):
     atitle1 = soupa.select('.SW')[0].getText
     atitle2 = soupa.select('.SW')[1].getText
     atitle3 = soupa.select('.SW')[2].getText
-
+    ntitle1 = soupn.select('.m-miM09_titleL')[0].getText
+    ntitle2 = soupn.select('.m-miM09_titleL')[1].getText
+    ntitle3 = soupn.select('.m-miM09_titleL')[2].getText
     #for i in ['1','2','3','4']:
     #    li = ytitle_index.find('li',attrs={'class': 'no'+i})
     #    a = li.find('a')
@@ -91,6 +95,9 @@ def appmain(request):
         'asahi1' : atitle1,
         'asahi2' : atitle2,
         'asahi3' : atitle3,
+        'nikkei1' : ntitle1,
+        'nikkei2' : ntitle2,
+        'nikkei3' : ntitle3,
 
         #'descr' : description3,
 

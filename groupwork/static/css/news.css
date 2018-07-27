@@ -39,6 +39,11 @@ li a:hover {
   padding: 20px 100px 0px 100px;
 }
 
+.nik {
+  background-color: #FFF;
+  padding: 20px 100px 0px 100px;
+}
+
 .name{
   font-size: 30pt;
 }
@@ -46,5 +51,20 @@ li a:hover {
 
 .kiji{
   font-size: 15pt;
-  text-decoration: underline;
+}
+
+.name a:link {
+    color: black;
+}
+
+
+
+/* mouse over link */
+.name a:hover {
+    color: blue;
+}
+
+/* selected link */
+.name a:active {
+    color: blue;
 }

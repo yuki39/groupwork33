@@ -7,13 +7,44 @@
   <link rel="stylesheet" href="{% static 'css/news.css' %}">
 </head>
 <body>
-  読売新聞<br>
-  {{yomiuri1}}<br>{{yomiuri2}}<br>{{yomiuri3}}<br><br>
+  <ul>
+    <li><a href = "#ap_1">読売新聞</a></li>
+    <li><a href = "#ap_2">毎日新聞</a></li>
+    <li><a href = "#ap_3">日経新聞</a></li>
+  </ul>
 
-  毎日新聞<br>
-  {{mainichi1}}<br>{{mainichi2}}<br>{{mainichi3}}<br><br>
+  <div class = yomi>
+    <div class = name>
+      <div id = ap_1>
+        <a href = "https://www.yomiuri.co.jp/">読売新聞</a>
+      </div>
+    </div>
+    <div class = kiji>
+      {{yomiuri1}}<br>{{yomiuri2}}<br>{{yomiuri3}}<br><br>
+    </div>
+  </div>
 
-  朝日新聞<br>
-  {{asahi1}}<br>{{asahi2}}<br>{{asahi3}}<br><br>
+  <div class = mai>
+    <div class = name>
+      <div id = ap_2>
+        <a href = "https://mainichi.jp/flash/1">毎日新聞</a>
+      </div>
+    </div>
+    <div class = kiji>
+      {{mainichi1}}<br>{{mainichi2}}<br>{{mainichi3}}<br><br>
+    </div>
+  </div>
+
+  <div class = nik>
+    <div class = name>
+      <div id = ap_3>
+        <a href = "http://www.nikkei.com/news/category">日経新聞</a>
+      </div>
+    </div>
+    <div class = kiji>
+      {{nikkei1}}<br>{{nikkei2}}<br>{{nikkei3}}<br><br>
+    </div>
+  </div>
+
 </body>
 </html>
