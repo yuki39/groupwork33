@@ -13,7 +13,7 @@ def appmain(request):
 #    while True:
 
         # 表示する各サイトのURLを入れる
-    #ytitle = []
+
     yomiuri = requests.get('https://www.yomiuri.co.jp/latestnews/')
     mainichi = requests.get('https://mainichi.jp/flash/1')
     asahi = requests.get('http://www.asahi.com/news/')
@@ -41,6 +41,7 @@ def appmain(request):
     atitle1 = soupa.select('.SW')[0].getText
     atitle2 = soupa.select('.SW')[1].getText
     atitle3 = soupa.select('.SW')[2].getText
+
     #for i in ['1','2','3','4']:
     #    li = ytitle_index.find('li',attrs={'class': 'no'+i})
     #    a = li.find('a')

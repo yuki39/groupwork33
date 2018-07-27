@@ -1,23 +1,50 @@
-title {
-  background-color: #DDD;
-  padding: 10px 20px 10px 20px
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
-body {
-  background-color: #FFF
-  padding: 10px 20px 20px 20px
+li {
+    float: left;
 }
 
-#yomiuri{
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.yomi {
+  background-color: #FFF;
+  padding: 20px 100px 0px 100px;
+}
+
+.mai {
+  background-color: #FFF;
+  padding: 20px 100px 0px 100px;
+}
+
+.name{
   font-size: 30pt;
-
 }
 
-#mainichi{
-  font-size: 30pt;
 
-}
-
-#asahi{
-  font-size: 30pt;
+.kiji{
+  font-size: 15pt;
+  text-decoration: underline;
 }
